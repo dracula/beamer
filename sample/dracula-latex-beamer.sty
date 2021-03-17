@@ -1,0 +1,100 @@
+
+
+%% Here's where the theme colors are defined.
+%%--------------------------
+
+
+
+\definecolor{draculabg}      {RGB} {40,   42,   54}
+\definecolor{draculacl}      {RGB} {68,   71,   90}
+\definecolor{draculafg}      {RGB} {248,  248,  242}
+\definecolor{draculacomment} {RGB} {98,   114,  164}
+\definecolor{draculacyan}    {RGB} {139,  233,  253}
+\definecolor{draculagreen}   {RGB} {80,   250,  123}
+\definecolor{draculaorange}  {RGB} {255,  184,  108}
+\definecolor{draculapink}    {RGB} {255,  121,  198}
+\definecolor{draculapurple}  {RGB} {189,  147,  249}
+\definecolor{draculared}     {RGB} {255,  85,   85}
+\definecolor{draculayellow}  {RGB} {241,  250,  140}
+
+\setbeamercolor{palette primary}{bg=draculapurple,fg=white}
+\setbeamercolor{palette secondary}{bg=draculapurple,fg=white}
+\setbeamercolor{palette tertiary}{bg=draculapurple,fg=white}
+\setbeamercolor{palette quaternary}{bg=draculapurple,fg=white}
+\setbeamercolor{section in toc}{fg=draculapurple} % TOC sections
+\setbeamercolor{subsection in toc}{fg=draculacyan} 
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=draculabg,fg=draculapurple}
+\setbeamercolor{section in head/foot}{fg=white}
+\setbeamercolor{background canvas}{bg=draculabg}
+\setbeamercolor{normal text}{fg=draculafg}
+\setbeamercolor{structure}{fg=draculacyan}
+\setbeamercolor*{item}{fg=draculapurple}
+\setbeamercolor{itemize/enumerate body}{fg=draculafg}
+\setbeamercolor{navigation symbols}{}
+\beamertemplatenavigationsymbolsempty
+
+\setbeamercolor*{title}{bg= draculagreen  ,fg=draculabg}
+\setbeamercolor*{block title}{bg=red  ,fg=white}
+
+\setbeamercovered{invisible}
+\setbeamertemplate{title page}[plain]
+
+% If you want to use a different theme with dracula colors remove all the line below
+\makeatletter
+\setbeamertemplate{headline}
+{%
+    \begin{beamercolorbox}[wd=\paperwidth,colsep=1.5pt]{upper separation line head}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}
+      \usebeamerfont{section in head/foot}%
+      \ifbeamer@tree@showhooks
+        \setbox\beamer@tempbox=\hbox{\insertsectionhead}%
+        \ifdim\wd\beamer@tempbox>1pt%
+          \hskip2pt\raise1.9pt\hbox{\vrule width0.4pt height1.875ex\vrule width 5pt height0.4pt}%
+          \hskip1pt%
+        \fi%
+      \else%  
+        \hskip6pt%
+      \fi%
+      \insertsectionhead
+      \usebeamerfont{subsection in head/foot}%
+      \ifbeamer@tree@showhooks
+        \setbox\beamer@tempbox=\hbox{\insertsubsectionhead}%
+        \ifdim\wd\beamer@tempbox>1pt%
+          \ \raise1.9pt\hbox{\vrule width 5pt height0.4pt}%
+          \hskip1pt%
+        \fi%
+      \else%  
+        \hskip12pt%
+      \fi%
+      \insertsubsectionhead
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,colsep=1.5pt]{lower separation line head}
+    \end{beamercolorbox}
+}
+\makeatother
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+    \leavevmode%
+    \hbox{%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\insertshortauthor
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+            \usebeamerfont{title in head/foot}
+        \end{beamercolorbox}%
+        \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+        \end{beamercolorbox}}%
+        \vskip0pt%
+    }
+    
