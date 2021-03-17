@@ -11,7 +11,8 @@
 
 ## Install
 
-All instructions can be found at [draculatheme.com/Beamer](https://draculatheme.com/Beamer).
+- All instructions can be found at [draculatheme.com/Beamer](https://draculatheme.com/Beamer).
+- If you are using beamer with [R Markdown](https://rmarkdown.rstudio.com/), check this [repository](https://gitlab.com/bsrthyle/dracula-dark-theme-for-r-markdown-beamer)
 
 ## Team
 
