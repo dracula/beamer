@@ -2,12 +2,13 @@
 
 > A dark theme for [Beamer](https://ctan.org/pkg/beamer?lang=en).
 
-| ![](Screenshot_1.png)|
-|-----------------|
 
 
-| ![](Screenshot_3.png) | ![](Screenshot_2.png) |
+| ![](Screenshot_1.png) | ![](Screenshot_2.png) PaloAlto |
 |-----------------|-----------------|
+| ![](Screenshot_3.png) CambridgeUS | ![](Screenshot_4.png) Ilmenau |
+| ![](Screenshot_5.png) Warsaw |
+
 
 ## Install
 

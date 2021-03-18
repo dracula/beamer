@@ -18,13 +18,13 @@
 %% ---------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}[2005/12/01]
 \ProvidesPackage{beamercolorthemedracula}
-    [2021/03/15 v0.1.1 A Dracula colour theme for Beamer presentations]
+    [2021/03/15 v0.1 A Dracula colour theme for Beamer presentations]
   \RequirePackage{etoolbox}
   
      
   
   
-   \definecolor{draculabg}      {RGB} {40,   42,   54}
+\definecolor{draculabg}      {RGB} {40,   42,   54}
 \definecolor{draculacl}      {RGB} {68,   71,   90}
 \definecolor{draculafg}      {RGB} {248,  248,  242}
 \definecolor{draculacomment} {RGB} {98,   114,  164}
@@ -50,9 +50,8 @@
   \colorlet{cyan}{draculacyan}
   \@ifclassloaded{beamer}{
     
-
     \setbeamercolor*{alerted text}{
-      fg=draculayellow
+      fg=draculared
     }
     \setbeamercolor{section in toc}{
     fg=draculapurple
@@ -180,5 +179,4 @@
     \setbeamertemplate{navigation symbols}{}
   }{}
 \endinput
-%%
-%% End of file `beamercolorthemedracula.sty'.
+

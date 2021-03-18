@@ -17,7 +17,7 @@
  
 \documentclass[xcolor=table]{beamer}
 
-\usetheme[]{PaloAlto}
+\usetheme[]{Warsaw}
 %\{beamercolorthemedracula}
 \usecolortheme{dracula}
 %\useoutertheme{tree}
@@ -58,7 +58,7 @@
 \institute[YIN] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 
-IWIM 2020\\
+xxx seminar 2020\\
 Institute of xxx\\
 University of xxx \\
 
@@ -92,7 +92,32 @@ University of xxx \\
 
 \section{Objective}
 \subsection{Problem statement}
-
+\begin{frame}{Nested List}
+    \begin{enumerate}
+        \item First level item
+        \item First level item
+        \begin{enumerate}
+          \item Second level item
+          \item Second level item
+          
+            \begin{enumerate}
+              \item Fourth level item
+              \item Fourth level item
+            \end{enumerate}
+        \end{enumerate}
+      \end{enumerate}
+    
+ \begin{itemize}
+    \item  First Level
+    \begin{itemize}
+      \item  Second Level
+      \begin{itemize}
+        \item  Third Level
+        
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{frame}
 \subsection{Research questions}
 \begin{frame}{Research questions}
     \begin{tikzpicture}[
