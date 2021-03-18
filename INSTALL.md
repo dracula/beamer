@@ -14,4 +14,4 @@ Download using the [GitHub .zip download](https://github.com/dracula/Beamer/arch
 
 
 1. Add the `.sty` file to your projects root directory 
-2. Add `\usepackage{dracula-latex-beamer}` to your preamble
+2. Add `\usecolortheme{dracula}` to your preamble

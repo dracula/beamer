@@ -17,11 +17,13 @@
  
 \documentclass[xcolor=table]{beamer}
 
-\usetheme{default}
-\useoutertheme{tree}
-\useinnertheme{rectangles}
+\usetheme[]{Warsaw}
+%\{beamercolorthemedracula}
+\usecolortheme{dracula}
+%\useoutertheme{tree}
+%\useinnertheme{rectangles}
 
-\usepackage{dracula-latex-beamer}
+%\usepackage{dracula-latex-beamer}
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{amsthm}
@@ -139,7 +141,7 @@ University of xxx \\
 
         \draw[important line, green, xshift=.5cm]
             (.2,.2) coordinate (es) -- (1.5,1.5) coordinate (ee)
-            node [above right] {Interest rate parity};
+            node [above right] {IRP};
     \end{scope}
     %Lines connecting IS LM coordinates and E coordinates
     \draw[dashed] 
