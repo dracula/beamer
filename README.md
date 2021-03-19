@@ -4,10 +4,10 @@
 
 
 
-|Antibes ![](Screenshot_1.png)  | PaloAlto ![](Screenshot_2.png)  |
+|Default ![](Screenshot_1.png)  | PaloAlto ![](Screenshot_2.png)  |
 |-----------------|-----------------|
-| ![](Screenshot_3.png) CambridgeUS | ![](Screenshot_4.png) Ilmenau |
-| ![](Screenshot_5.png) Warsaw |
+|CambridgeUS ![](Screenshot_3.png)  |Ilmenau ![](Screenshot_4.png)  |
+|Warsaw ![](Screenshot_5.png)  |Antibes ![](Screenshot_5.png) 
 
 
 ## Install
