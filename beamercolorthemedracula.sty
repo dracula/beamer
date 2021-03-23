@@ -1,41 +1,28 @@
 %%
 %% This is file `beamercolorthemedracula.sty',
-%% 
+%%
 %%
 %% The theme is based on the beamercolorthemeowl theme (https://github.com/rchurchley/beamercolortheme-owl) :
 %%
-%% beamercolorthemedracula.sty  
+%% beamercolorthemedracula.sty
 %% ---------------------------------------------------------------------------
-%% Copyright Bisrat Haile 2021 
-%% 
+%% Copyright Bisrat Haile 2021
+%%
 %% This work may be distributed and/or modified under the conditions of
 %% the LaTeX Project Public License, either version 1.3 of this license
 %% or (at your option) any later version. The latest version of this
 %% license is in:
-%% 
+%%
 %%     http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% ---------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}[2005/12/01]
 \ProvidesPackage{beamercolorthemedracula}
-    [2021/03/15 v0.1 A Dracula colour theme for Beamer presentations]
-  \RequirePackage{etoolbox}
-  
-     
-  
-  
-\definecolor{draculabg}      {RGB} {40,   42,   54}
-\definecolor{draculacl}      {RGB} {68,   71,   90}
-\definecolor{draculafg}      {RGB} {248,  248,  242}
-\definecolor{draculacomment} {RGB} {98,   114,  164}
-\definecolor{draculacyan}    {RGB} {139,  233,  253}
-\definecolor{draculagreen}   {RGB} {80,   250,  123}
-\definecolor{draculaorange}  {RGB} {255,  184,  108}
-\definecolor{draculapink}    {RGB} {255,  121,  198}
-\definecolor{draculapurple}  {RGB} {189,  147,  249}
-\definecolor{draculared}     {RGB} {255,  85,   85}
-\definecolor{draculayellow}  {RGB} {241,  250,  140}
+    [2021/03/15 v0.1.1 A Dracula colour theme for Beamer presentations]
 
+  \RequirePackage{etoolbox}
+
+  \RequirePackage{draculatheme}
 
   \setbeamercolor{normal text}{fg=draculafg, bg=draculabg}
 
@@ -49,33 +36,34 @@
   \colorlet{orange}{draculaorange}
   \colorlet{cyan}{draculacyan}
   \@ifclassloaded{beamer}{
-    
+
+
     \setbeamercolor*{alerted text}{
-      fg=draculared
+      fg=draculayellow
     }
     \setbeamercolor{section in toc}{
-    fg=draculapurple
-    } % TOC sections
-    \setbeamercolor{subsection in toc}{
-    fg=draculagreen!75!normal text.bg,
-    } 
+      fg=draculapurple
+	} % TOC sections
+      \setbeamercolor{subsection in toc}{
+      fg=draculagreen!75!normal text.bg,
+    }
     \setbeamercolor*{example text}{
       fg=draculapurple
     }
-    
+
     \setbeamercolor*{title}{
-    bg= draculagreen!80,
-    fg=draculabg
+      bg=draculagreen!80,
+      fg=draculabg
     }
 
     \setbeamercolor{background canvas}{bg=draculabg}
     \setbeamercolor*{item}{
-    fg=draculagreen!75!normal text.bg, bg=draculabg
+      fg=draculagreen!75!normal text.bg, bg=draculabg
     }
     \setbeamercolor{itemize/enumerate body}{
-    fg=draculafg
+      fg=draculafg
     }
-    
+
     \setbeamercolor*{title in sidebar}{
       use=normal text,
       fg=normal text.fg
@@ -179,4 +167,5 @@
     \setbeamertemplate{navigation symbols}{}
   }{}
 \endinput
-
+%%
+%% End of file `beamercolorthemedracula.sty'.
