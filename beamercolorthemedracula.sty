@@ -8,22 +8,12 @@
 %% ---------------------------------------------------------------------------
 %% Copyright Bisrat Haile 2021 
 %% 
-%% This work may be distributed and/or modified under the conditions of
-%% the LaTeX Project Public License, either version 1.3 of this license
-%% or (at your option) any later version. The latest version of this
-%% license is in:
-%% 
-%%     http://www.latex-project.org/lppl.txt
-%% 
 %% ---------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}[2005/12/01]
 \ProvidesPackage{beamercolorthemedracula}
-    [2021/03/15 v0.1 A Dracula colour theme for Beamer presentations]
-  \RequirePackage{etoolbox}
-  
-     
-  
-  
+    [2021/03/15 v0.1.1 A Dracula colour theme for Beamer presentations]
+\RequirePackage{etoolbox}
+
 \definecolor{draculabg}      {RGB} {40,   42,   54}
 \definecolor{draculacl}      {RGB} {68,   71,   90}
 \definecolor{draculafg}      {RGB} {248,  248,  242}
@@ -36,20 +26,21 @@
 \definecolor{draculared}     {RGB} {255,  85,   85}
 \definecolor{draculayellow}  {RGB} {241,  250,  140}
 
+\colorlet{draculabrown}{draculared!50!draculared}
+\colorlet{red}{draculared}
+\colorlet{green}{draculagreen}
+\colorlet{blue}{draculacyan}
+\colorlet{yellow}{draculayellow}
+\colorlet{violet}{draculared}
+\colorlet{brown}{draculaorange}
+\colorlet{orange}{draculaorange}
+\colorlet{cyan}{draculacyan}
+  
+\setbeamercolor{normal text}{fg=draculafg, bg=draculabg}
 
-  \setbeamercolor{normal text}{fg=draculafg, bg=draculabg}
-
-  \colorlet{draculabrown}{draculared!50!draculagreen}
-  \colorlet{red}{draculared}
-  \colorlet{green}{draculagreen}
-  \colorlet{blue}{draculacyan}
-  \colorlet{yellow}{draculayellow}
-  \colorlet{violet}{draculared}
-  \colorlet{brown}{draculaorange}
-  \colorlet{orange}{draculaorange}
-  \colorlet{cyan}{draculacyan}
-  \@ifclassloaded{beamer}{
+\@ifclassloaded{beamer}{
     
+
     \setbeamercolor*{alerted text}{
       fg=draculared
     }
@@ -179,4 +170,4 @@
     \setbeamertemplate{navigation symbols}{}
   }{}
 \endinput
-
+%% End of file `beamercolorthemedracula.sty'.

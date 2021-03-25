@@ -7,13 +7,13 @@
 |Default ![](Screenshot_1.png)  | PaloAlto ![](Screenshot_2.png)  |
 |-----------------|-----------------|
 |CambridgeUS ![](Screenshot_3.png)  |Ilmenau ![](Screenshot_4.png)  |
-|Warsaw ![](Screenshot_5.png)  |Antibes ![](Screenshot_5.png) 
+|Warsaw ![](Screenshot_5.png)  |Antibes ![](Screenshot_6.png) 
 
 
 ## Install
 
 - All instructions can be found at [draculatheme.com/Beamer](https://draculatheme.com/Beamer).
-- If you are using beamer with [R Markdown](https://rmarkdown.rstudio.com/), check this [repository](https://gitlab.com/bsrthyle/dracula-dark-theme-for-r-markdown-beamer)
+
 
 ## Team
 
